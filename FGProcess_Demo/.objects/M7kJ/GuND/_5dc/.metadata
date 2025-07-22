@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome UiPath Login Automation",
+  "Type": "Screen",
+  "Id": "_5dcPMxLF06mFuGFs16Saw",
+  "Reference": "bsAY08vNEEyRg9dcTNCcOg/_5dcPMxLF06mFuGFs16Saw",
+  "ParentRef": "bsAY08vNEEyRg9dcTNCcOg/GuNDXSMfNUqAAamhD-Ieyw",
+  "Created": "2025-07-08T05:43:20.9787892Z",
+  "Updated": "2025-07-08T05:43:20.9787892Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
