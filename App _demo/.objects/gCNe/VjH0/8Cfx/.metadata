@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge google.com - Search - Personal - Microso",
+  "Type": "Screen",
+  "Id": "8CfxkDBBQU-oyLCKPXPTmA",
+  "Reference": "_P-JqRVeIkKbZCQI1RkfaQ/8CfxkDBBQU-oyLCKPXPTmA",
+  "ParentRef": "_P-JqRVeIkKbZCQI1RkfaQ/VjH0tzqeMEOPlBqZLhXSVQ",
+  "Created": "2025-07-23T03:05:18.0663938Z",
+  "Updated": "2025-07-23T03:05:18.0663938Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

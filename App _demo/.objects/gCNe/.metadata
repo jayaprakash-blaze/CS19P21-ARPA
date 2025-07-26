@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge google.com - Search - Personal - Microsoft​ Edge",
+  "Type": "App",
+  "Id": "gCNeYRJQgUmWcvtwFNwfQA",
+  "Reference": "_P-JqRVeIkKbZCQI1RkfaQ/gCNeYRJQgUmWcvtwFNwfQA",
+  "Created": "2025-07-23T03:05:17.9228703Z",
+  "Updated": "2025-07-23T03:05:17.9228703Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.13.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

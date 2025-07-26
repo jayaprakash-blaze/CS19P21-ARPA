@@ -88,7 +88,7 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="534.6666666666666,1188" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="849.9999999999999,1178.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="intCount" />
     </Sequence.Variables>
@@ -97,7 +97,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="520.6666666666666,116.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap:VirtualizedContainerService.HintSize="520.6666666666666,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[intCount]</OutArgument>
       </Assign.To>
@@ -105,39 +105,39 @@
         <InArgument x:TypeArguments="x:Int32">1</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="520.6666666666666,920.6666666666666" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[intCount&lt;=10]" DisplayName="While" sap:VirtualizedContainerService.HintSize="520.6666666666666,924" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
       <ui:InterruptibleWhile.Body>
-        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486.6666666666667,773.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486.6666666666667,776" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452.6666666666667,276" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452.6666666666667,276.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_3">
             <ui:CommentOut.Body>
-              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,164" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,164.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="382,104" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[&quot;REC-CSE&quot;+New Random().Next(1000,10000).ToString+&quot;.txt&quot;]" />
+                <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="382,104.66666666666667" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[New random().Next(1000,10000).ToString()+&quot;.txt&quot;]" />
               </Sequence>
             </ui:CommentOut.Body>
           </ui:CommentOut>
-          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452.6666666666667,330" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452.6666666666667,331.3333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_2">
             <ui:CommentOut.Body>
-              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,219.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_3">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[New Random().Next(1000,10000).ToString+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="382,158" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[New Random().Next(1000,10000).ToString]" />
+                <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[New Random().Next(1000,10000).ToString+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="382,159.33333333333334" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[New Random().Next(1000,10000).ToString]" />
               </Sequence>
             </ui:CommentOut.Body>
           </ui:CommentOut>
-          <Assign sap:VirtualizedContainerService.HintSize="452.6666666666667,107.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+          <Assign sap:VirtualizedContainerService.HintSize="452.6666666666667,108" sap2010:WorkflowViewState.IdRef="Assign_2">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Int32">[intCount]</OutArgument>
             </Assign.To>
@@ -147,10 +147,7 @@
           </Assign>
         </Sequence>
       </ui:InterruptibleWhile.Body>
-      <ui:InterruptibleWhile.Condition>
-        <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="intCount&lt;=10" />
-      </ui:InterruptibleWhile.Condition>
     </ui:InterruptibleWhile>
-    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="520.6666666666666,114" sap2010:WorkflowViewState.IdRef="Delay_2" />
+    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="520.6666666666666,114.66666666666667" sap2010:WorkflowViewState.IdRef="Delay_2" />
   </Sequence>
 </Activity>
