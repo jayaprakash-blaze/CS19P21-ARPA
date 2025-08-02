@@ -1,0 +1,27 @@
+in excel -> vlookup(lookup_value , table array) in one cell if we do so we will get the college name and dragging it fully down it will fill with clg name
+=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+vlookup means vertical column
+
+proper function in excel will return in proper case(like handwritten one)
+
+to find length use len and find 
+
+type one sample in a cell and select the cells down -> use ctrl+e 
+
+in excel sheet select all and click on pivot table and then new workbook -> then in new page pivot table fields select the column we want in rows and colummns
+
+select all ctrl+t -> data in table format
+
+
+
+
+
+
+
+excel application scope 
+inside do have create pivot table "A1:G12"
+"sheet1" , "table" , "pivottable"
+message box "completed"
+
+refresh pivot table -> "pivotableSheet" , "pivottable"
+
