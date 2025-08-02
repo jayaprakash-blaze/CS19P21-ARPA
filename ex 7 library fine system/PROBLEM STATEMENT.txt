@@ -1,0 +1,33 @@
+PROBLEM STATEMENT
+library management workflow that reads Excel and CSV data, identifies students who have not returned books within a week, calculates fines, and writes results back to Excel with colored formatting (Red for fined students, Green for those without fines)
+
+
+.xlsx -> read range(Workbook) -> dt-> dtLibrary
+.csv -> read csv (has header) -> Dt-> dtBorrowers
+to combine these two use -> Join data Table -> dtBorrowers , dtLibrary -> dtResult
+Join type -> Inner -> Borrowers Name 
+Filter Data type -> dtResult as source -> DtFiltered
+Keep Rows -> Profession=Students
+Remove Coloumns -> if name is repeated twice -> Borrowers Name_1 , ID
+
+
+After this calculate the fine amount 
+
+In excel column common row different so have a counter variable and save as 2 as 1st row will be titles 
+Add Excel Application scope -> when ever we write here it will use it always 
+to iterate this one by one use -> For each row in data table use assign activity
+Message Box
+
+(Convert.ToDateTime(row("Returned Date"))-Convert.ToDateTime(row("Issued On"))).TotalDays
+
+Assign
+
+CInt((Convert.ToDateTime(row("Returned Date"))-Convert.ToDateTime(row("Issued On"))).TotalDays)
+
+Condition as > 7
+Write Cell -> Sheet name value and cell name(intDays *10).ToString , "G"+intCount.ToString
+Set Range Colur -> to change the coour -->> Color.Red  ,  "C"+intCount.ToString
+student with 0 fine -> green others filles with red colour
+
+
+
